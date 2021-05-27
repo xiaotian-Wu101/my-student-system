@@ -1,0 +1,138 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+body {
+    background-color: #eee;
+}
+a {
+    color: #b3bcc5;
+}
+
+.header {
+    height: 70px;
+    line-height: 70px;
+    background-color: #354457;
+    color: #b3bcc5;
+    font-size: 14px;
+    padding-left: 20px;
+}
+.header .logo {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+}
+
+.left-menu {
+    width: 200px;
+    background-color: #4d5e70;
+    color: #b3bcc5;
+    height: calc(100vh - 70px);
+    line-height: 40px;
+    font-size: 14px;
+}
+.right-content {
+    position: absolute;
+    left: 200px;
+    top: 70px;  
+    height: calc(100vh - 70px);
+    width: calc(100% - 200px);
+    overflow: hidden;
+}
+
+.left-menu  dt {
+    padding-left: 10px;
+}
+
+.left-menu dd a {
+    padding-left: 40px;
+    display: block;
+}
+.left-menu  dd.menu-active {
+    background-color: #ddd;
+    color: #354457;
+}
+.left-menu  dd.menu-active a {
+    color: #354457;
+}
+#student-list {
+    height: 100%;
+    overflow-y: scroll;
+}
+#student-add {
+    height: 1000px;
+    /* overflow: hidden; */
+    border: 1px solid transparent;
+}
+
+form {
+    width: 400px;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+form label:not(.sex) {
+    width: 100px;
+    display: inline-block;
+    text-align: right;
+    margin-right: 10px;
+}
+form div {
+    margin: 10px 0;
+}
+
+.btn {
+    padding: 5px 23px;
+    cursor: pointer;
+}
+
+#student-list table {
+    width: 100%;
+    text-align: center;
+    line-height: 30px;
+    font-size: 14px;
+}
+
+#student-list table thead {
+    background-color: #e3e8ee;
+    color: #646987;
+}
+#student-list table tbody {
+    background-color: #fff;
+}
+#student-list .operation-btn {
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+}
+#student-list .operation-btn.edit {
+    background-color: #5cb85c;
+}
+#student-list .operation-btn.remove {
+    background-color: #d9534f;
+}
+
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+.modal-content {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 400px;
+    height: 400px;
+    background-color: #fff;
+    margin: auto;
+    padding: 20px;
+}
